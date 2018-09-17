@@ -1,0 +1,35 @@
+language: node_js
+node_js:
+    - '10.9.0'
+
+branches:
+    only:
+        - dev
+
+cache:
+    directories:
+        - node_modules
+
+before_script:
+    - npm install --global gatsby-cli
+
+script:
+    - npm run build-prod
+
+after_success:
+    - ls public/
+
+notifications:
+    email:
+        on_failure: change
+        on_success: change
+
+deploy:
+    provider: pages
+    skip-cleanup: true
+    local_dir: public
+    github-token: $GITHUB_TOKEN
+    keep-history: false
+    on:
+        branch: dev
+    target-branch: master
