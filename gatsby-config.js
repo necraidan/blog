@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: 'Gatsby Default Starter'
+        title: 'Awesome Blog'
     },
     plugins: ['gatsby-plugin-react-helmet'],
     pathPrefix: `/blog`
