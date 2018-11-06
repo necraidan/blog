@@ -17,4 +17,4 @@ const Prettify = () => (
     </div>
 );
 
-export default SecondPage;
+export default Prettify;
