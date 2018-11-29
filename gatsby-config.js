@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Awesome Blog'
   },
+  pathPrefix: `/blog`,
   plugins: [
     'gatsby-plugin-react-helmet',
     {
