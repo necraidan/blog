@@ -1,37 +1,50 @@
 {
   "name": "gatsby-starter-default",
   "description": "necraidan's blog",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "author": "necraidan <benjamin.auzanneau.tm@gmail.com>",
-  "dependencies": {
-    "gatsby": "^2.0.43",
-    "gatsby-image": "^2.0.15",
-    "gatsby-plugin-manifest": "^2.0.5",
-    "gatsby-plugin-offline": "^2.0.11",
-    "gatsby-plugin-react-helmet": "^3.0.0",
-    "gatsby-plugin-sharp": "^2.0.7",
-    "gatsby-source-filesystem": "^2.0.4",
-    "gatsby-transformer-sharp": "^2.1.4",
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1",
-    "react-helmet": "^5.2.0"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "build-prod": "gatsby build --prefix-paths",
-    "start": "gatsby develop",
-    "format": "prettier --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "build:check": "nuxt build --analyze",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --ignore-pattern plugins/ga.js .",
+    "precommit": "npm run lint",
+    "format": "prettier --write 'src/**/*.js'"
+  },
+  "dependencies": {
+    "@nuxtjs/pwa": "^3.0.0-beta.16",
+    "@nuxtjs/style-resources": "^0.1.2",
+    "degit": "^2.1.3",
+    "front-matter": "^3.0.2",
+    "fs-extra": "^8.1.0",
+    "get-port": "^5.0.0",
+    "glob": "^7.1.4",
+    "highlight.js": "^9.15.8",
+    "intersection-observer": "^0.7.0",
+    "lodash": "^4.17.14",
+    "marked": "^0.6.3",
+    "micro": "^9.3.4",
+    "node-fetch": "^2.6.0",
+    "normalize.css": "^8.0.1",
+    "nuxt": "^2.8.1",
+    "nuxt-svg-loader": "^1.0.1",
+    "octicons": "^8.5.0",
+    "v-lazy-image": "^1.3.2"
   },
   "devDependencies": {
-    "prettier": "^1.14.2"
+    "babel-eslint": "^10.0.2",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-html": "^5.0.5",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  }
+  "keywords": [],
+  "license": "MIT"
 }
