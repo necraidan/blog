@@ -62,4 +62,5 @@ typings/
 
 .cache/*
 
-public/*
+.nuxt/
+dist/
