@@ -1,8 +1,8 @@
 {
   "name": "blog",
   "version": "1.0.0",
-  "description": "necraidan&#39;s blog",
-  "author": "necraidan &lt;benjamin.auzanneau.tm@gmail.com&gt;",
+  "description": "necraidan's blog",
+  "author": "necraidan <benjamin.auzanneau.tm@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "nuxt",
