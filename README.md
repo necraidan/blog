@@ -1,10 +1,22 @@
 # blog
-The blog. Dot.
 
-### TODO
-- Create the page with articles
-- Add Favicon
-- Add new starter
+> necraidan&#39;s blog
 
+## Build Setup
 
-Disclaimer: I’m not a native English speaker, so feel free to point out grammatical and/or syntactical errors. Every respectful comment is deeply appreciated.
+``` bash
+# install dependencies
+$ yarn install
+
+# serve with hot reload at localhost:3000
+$ yarn dev
+
+# build for production and launch server
+$ yarn build
+$ yarn start
+
+# generate static project
+$ yarn generate
+```
+
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
