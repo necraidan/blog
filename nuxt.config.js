@@ -5,6 +5,7 @@ export default {
         ? 'https://necraidan.com/blog'
         : 'http://localhost:3000'
   },
+  router: { base: '/blog' },
   mode: 'spa',
   /*
    ** Headers of the page
