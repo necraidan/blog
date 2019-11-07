@@ -1,35 +1,35 @@
 language: node_js
 node_js:
-    - '12.6.0'
+  - '12.6.0'
 
 branches:
-    only:
-        - dev
+  only:
+    - dev
 
 cache:
-    directories:
-        - node_modules
+  directories:
+    - node_modules
 
 # before_script:
 #    - npm i
 
 script:
-    - npm run generate
+  - npm run generate-prod
 
 after_success:
-    - ls dist/
+  - ls dist/
 
 notifications:
-    email:
-        on_failure: change
-        on_success: change
+  email:
+    on_failure: change
+    on_success: change
 
 deploy:
-    provider: pages
-    skip-cleanup: true
-    local_dir: dist
-    github-token: $GITHUB_TOKEN
-    keep-history: false
-    on:
-        branch: dev
-    target-branch: master
+  provider: pages
+  skip-cleanup: true
+  local_dir: dist
+  github-token: $GITHUB_TOKEN
+  keep-history: false
+  on:
+    branch: dev
+  target-branch: master

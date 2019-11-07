@@ -1,4 +1,10 @@
 export default {
+  env: {
+    baseUrl:
+      process.env.NODE_ENV === 'prod'
+        ? 'https://necraidan.com/blog'
+        : 'http://localhost:3000'
+  },
   mode: 'spa',
   /*
    ** Headers of the page
@@ -66,4 +72,4 @@ export default {
      */
     extend(config, ctx) {}
   }
-}
+};
