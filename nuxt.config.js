@@ -1,3 +1,5 @@
+import path from 'path';
+
 export default {
   env: {
     baseUrl:
@@ -71,6 +73,13 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) {
+      // add frontmatter-markdown-loader
+      config.module.rules.push({
+        test: /\.md$/,
+        include: path.resolve(__dirname, 'content'),
+        loader: 'frontmatter-markdown-loader'
+      });
+    }
   }
 };
