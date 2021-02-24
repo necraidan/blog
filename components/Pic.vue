@@ -1,6 +1,6 @@
 <template>
   <figure class="pic image is-256x256">
-    <img class="is-rounded" src="~/assets/b.jpg" />
+    <img class="rounded-full" src="~/assets/b.jpg" />
   </figure>
 </template>
 
