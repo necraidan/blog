@@ -55,10 +55,11 @@ This is some more info
 ## This is another heading
 
 This is some more info
-https://fr.nuxtjs.org/blog/creating-blog-with-nuxt-content/#installation
 
 ```js[pouet]
 export default {
   nuxt: "is the best"
 }
 ```
+
+https://fr.nuxtjs.org/blog/creating-blog-with-nuxt-content/#installation
